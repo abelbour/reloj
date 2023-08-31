@@ -1,0 +1,2136 @@
+[
+    {
+        "id": "1959f2e4678ddd2a",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6454eccffb9ff684",
+        "type": "tab",
+        "label": "Cronometro",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ad8ecce68ce63388",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.1.10",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "5",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "18cf69c0d0f9950c",
+        "type": "ui_tab",
+        "name": "Reloj",
+        "icon": "clock",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c9fa62549f2fb149",
+        "type": "ui_group",
+        "name": "Cronómetro",
+        "tab": "18cf69c0d0f9950c",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "31f62344d72bab20",
+        "type": "ui_group",
+        "name": "Pantalla",
+        "tab": "18cf69c0d0f9950c",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "65dc11e5555b0aad",
+        "type": "ui_group",
+        "name": "Opciones",
+        "tab": "18cf69c0d0f9950c",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "a3bcd38d21b0f5cd",
+        "type": "ui_group",
+        "name": "Hora",
+        "tab": "18cf69c0d0f9950c",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ec8a30f5e70f7290",
+        "type": "ui_group",
+        "name": "QR",
+        "tab": "18cf69c0d0f9950c",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "62baa96ae38389e9",
+        "type": "ui_spacer",
+        "z": "6454eccffb9ff684",
+        "name": "spacer",
+        "group": "65dc11e5555b0aad",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "386a46d459b46678",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "4af09e43c6c4b8b5",
+        "type": "mqtt in",
+        "z": "1959f2e4678ddd2a",
+        "name": "",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 1,
+        "x": 630,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "72c14d280cb8f20c",
+        "type": "mqtt out",
+        "z": "1959f2e4678ddd2a",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "",
+        "x": 1130,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "13297b182e69e5a8",
+        "type": "mqtt in",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "topic": "reloj/switch/sw_blink/state",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ad8ecce68ce63388",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 290,
+        "y": 560,
+        "wires": [
+            [
+                "51fd80a8501f1580",
+                "5cb12b19703485a5"
+            ]
+        ]
+    },
+    {
+        "id": "ce323b130ba5fd0e",
+        "type": "mqtt out",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ad8ecce68ce63388",
+        "x": 1210,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "3249c12cee87f664",
+        "type": "mqtt in",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "topic": "reloj/sensor/display_text/state",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ad8ecce68ce63388",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 300,
+        "y": 620,
+        "wires": [
+            [
+                "f712c1b489b74279"
+            ]
+        ]
+    },
+    {
+        "id": "633b6c8ccd403440",
+        "type": "mqtt in",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "topic": "reloj/sensor/stopwatch/state",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ad8ecce68ce63388",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 300,
+        "y": 800,
+        "wires": [
+            [
+                "5c25bbd2a2b5f038"
+            ]
+        ]
+    },
+    {
+        "id": "921d498dab549884",
+        "type": "mqtt in",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "topic": "reloj/sensor/timeclock/state",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ad8ecce68ce63388",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 290,
+        "y": 860,
+        "wires": [
+            [
+                "3bb77af3bd9c5c76"
+            ]
+        ]
+    },
+    {
+        "id": "148d5af2610666b8",
+        "type": "mqtt in",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "topic": "reloj/number/countdown_minutes/state",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ad8ecce68ce63388",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 330,
+        "y": 740,
+        "wires": [
+            [
+                "fb3f5ec25889b369",
+                "db63de4df5ddf6cb"
+            ]
+        ]
+    },
+    {
+        "id": "fa3b939553c2a9e5",
+        "type": "mqtt in",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "topic": "reloj/select/sel_display_mode/state",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ad8ecce68ce63388",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 320,
+        "y": 1160,
+        "wires": [
+            [
+                "1ea37f238467f94f"
+            ]
+        ]
+    },
+    {
+        "id": "35561f94271bf1d3",
+        "type": "mqtt in",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "topic": "reloj/select/sel_overtime_mode/state",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ad8ecce68ce63388",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 320,
+        "y": 680,
+        "wires": [
+            [
+                "86400acd1d962e04"
+            ]
+        ]
+    },
+    {
+        "id": "9306f77def078760",
+        "type": "mqtt in",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "topic": "reloj/select/sel_stopwatch_mode/state",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ad8ecce68ce63388",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 330,
+        "y": 920,
+        "wires": [
+            [
+                "36e4b52935240ce9"
+            ]
+        ]
+    },
+    {
+        "id": "47e7db6309315be2",
+        "type": "mqtt in",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "topic": "reloj/sensor/txt_stopwatch_state/state",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ad8ecce68ce63388",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 330,
+        "y": 280,
+        "wires": [
+            [
+                "109549fa6b73d46b"
+            ]
+        ]
+    },
+    {
+        "id": "ba62de14e1ad8144",
+        "type": "change",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "icon",
+                "pt": "msg",
+                "to": "pause",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "label",
+                "pt": "msg",
+                "to": "Pausar",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "state",
+                "pt": "msg",
+                "to": "CORRIENDO",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 400,
+        "wires": [
+            [
+                "8a5ddef03fd9b701",
+                "a1d2abd176afa4d6"
+            ]
+        ]
+    },
+    {
+        "id": "109549fa6b73d46b",
+        "type": "switch",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "running",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "paused",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 250,
+        "y": 340,
+        "wires": [
+            [
+                "ba62de14e1ad8144"
+            ],
+            [
+                "534cc59e04b5981d"
+            ],
+            [
+                "c2e6b0143b48b149"
+            ]
+        ]
+    },
+    {
+        "id": "c2e6b0143b48b149",
+        "type": "change",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "icon",
+                "pt": "msg",
+                "to": "play_arrow",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "label",
+                "pt": "msg",
+                "to": "Inicio",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "state",
+                "pt": "msg",
+                "to": "PAUSADO",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 480,
+        "wires": [
+            [
+                "8a5ddef03fd9b701",
+                "a1d2abd176afa4d6"
+            ]
+        ]
+    },
+    {
+        "id": "d9f1693b4d618e0a",
+        "type": "mqtt in",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "topic": "reloj/switch/stopwatch_auto_show/state",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ad8ecce68ce63388",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 330,
+        "y": 980,
+        "wires": [
+            [
+                "b702428906dc0d2e"
+            ]
+        ]
+    },
+    {
+        "id": "09de1941a038414c",
+        "type": "mqtt in",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "topic": "reloj/number/lcd_brightness/state",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ad8ecce68ce63388",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 1040,
+        "wires": [
+            [
+                "5dd449eac59b30a8"
+            ]
+        ]
+    },
+    {
+        "id": "1ea37f238467f94f",
+        "type": "switch",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "else"
+            },
+            {
+                "t": "eq",
+                "v": "stopwatch",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "sign",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 370,
+        "y": 1260,
+        "wires": [
+            [
+                "96e08f4bff4bf570",
+                "de6ec806d52a2ecf"
+            ],
+            [
+                "a405a7723fe4ce42",
+                "2723f3b0bc7b5ae3"
+            ],
+            [
+                "a5b245c34eccebd9",
+                "7b2d206536da79c5"
+            ]
+        ]
+    },
+    {
+        "id": "96e08f4bff4bf570",
+        "type": "change",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "maroon",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 1180,
+        "wires": [
+            [
+                "1944bc65deb26b4f"
+            ]
+        ]
+    },
+    {
+        "id": "a405a7723fe4ce42",
+        "type": "change",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "maroon",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 1220,
+        "wires": [
+            [
+                "2805212ca9287d1a"
+            ]
+        ]
+    },
+    {
+        "id": "a5b245c34eccebd9",
+        "type": "change",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "maroon",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 1260,
+        "wires": [
+            [
+                "7012445d95f222ef"
+            ]
+        ]
+    },
+    {
+        "id": "de6ec806d52a2ecf",
+        "type": "change",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 1300,
+        "wires": [
+            [
+                "2805212ca9287d1a",
+                "7012445d95f222ef"
+            ]
+        ]
+    },
+    {
+        "id": "2723f3b0bc7b5ae3",
+        "type": "change",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 1340,
+        "wires": [
+            [
+                "1944bc65deb26b4f",
+                "7012445d95f222ef"
+            ]
+        ]
+    },
+    {
+        "id": "7b2d206536da79c5",
+        "type": "change",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 1380,
+        "wires": [
+            [
+                "2805212ca9287d1a",
+                "1944bc65deb26b4f"
+            ]
+        ]
+    },
+    {
+        "id": "ef1fc4378cf52916",
+        "type": "trigger",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "op1": "true",
+        "op2": "false",
+        "op1type": "bool",
+        "op2type": "bool",
+        "duration": "-500",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 560,
+        "y": 1480,
+        "wires": [
+            [
+                "c2c016ce6cc17684"
+            ]
+        ]
+    },
+    {
+        "id": "c2c016ce6cc17684",
+        "type": "switch",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "property": "blink",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 770,
+        "y": 1460,
+        "wires": [
+            [
+                "9ee4dc666446dbbd"
+            ],
+            [
+                "40cbd5896caf21d1"
+            ]
+        ]
+    },
+    {
+        "id": "40cbd5896caf21d1",
+        "type": "change",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "blink",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 1440,
+        "wires": [
+            [
+                "f712c1b489b74279"
+            ]
+        ]
+    },
+    {
+        "id": "9ee4dc666446dbbd",
+        "type": "change",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "blink",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 1480,
+        "wires": [
+            [
+                "f712c1b489b74279"
+            ]
+        ]
+    },
+    {
+        "id": "5cb12b19703485a5",
+        "type": "switch",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ON",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "OFF",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 310,
+        "y": 1480,
+        "wires": [
+            [
+                "ef1fc4378cf52916",
+                "433348d3eb22c152"
+            ],
+            [
+                "565abc4e9f130cc3",
+                "63990254c6f0796b"
+            ]
+        ]
+    },
+    {
+        "id": "565abc4e9f130cc3",
+        "type": "change",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 1540,
+        "wires": [
+            [
+                "ef1fc4378cf52916",
+                "40cbd5896caf21d1"
+            ]
+        ]
+    },
+    {
+        "id": "24dc876c8be5ca50",
+        "type": "mqtt in",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "topic": "reloj/switch/stopwatch_blink_before_overtime/state",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ad8ecce68ce63388",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 370,
+        "y": 1100,
+        "wires": [
+            [
+                "2619ca21b84fb226"
+            ]
+        ]
+    },
+    {
+        "id": "db63de4df5ddf6cb",
+        "type": "change",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "countdown_minutes",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7dd571f269253a1b",
+        "type": "change",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$flowContext(\"countdown_minutes\") + msg.payload\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1640,
+        "y": 1100,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "9f9c4b8e7d571379",
+        "type": "debug",
+        "z": "6454eccffb9ff684",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "433348d3eb22c152",
+        "type": "change",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "parpadear",
+                "pt": "flow",
+                "to": "blink",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 1680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "63990254c6f0796b",
+        "type": "change",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "parpadear",
+                "pt": "flow",
+                "to": "noblink",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 1740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5bffcbdc8f23fd5c",
+        "type": "change",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "className",
+                "pt": "msg",
+                "to": "parpadear",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "534cc59e04b5981d",
+        "type": "change",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "icon",
+                "pt": "msg",
+                "to": "play_arrow",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "label",
+                "pt": "msg",
+                "to": "Continuar",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "state",
+                "pt": "msg",
+                "to": "PAUSADO",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 440,
+        "wires": [
+            [
+                "a1d2abd176afa4d6",
+                "8a5ddef03fd9b701"
+            ]
+        ]
+    },
+    {
+        "id": "6cc7e1fed12594ec",
+        "type": "qrcode-generator",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "qrtype": "text2qr",
+        "text2qrText": "http://192.168.1.10:1880/ui/#!/0?socketid=Oj8McKiHmJc8bezgAAAF",
+        "ssid": "",
+        "hiddenssid": false,
+        "wifitype": "",
+        "phonenum": "",
+        "smsphonenum": "",
+        "smstext": "",
+        "mailto": "",
+        "mailsubject": "",
+        "mailbody": "",
+        "latitude": "",
+        "longitude": "",
+        "colorlight": "#ffffff",
+        "colordark": "#000000",
+        "printstatus": false,
+        "x": 1170,
+        "y": 500,
+        "wires": [
+            [
+                "bd7cc3e2f03b35ab"
+            ]
+        ]
+    },
+    {
+        "id": "8a5ddef03fd9b701",
+        "type": "ui_button",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "group": "c9fa62549f2fb149",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "{{label}}",
+        "tooltip": "Inicia o pausa el cronómetro",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "{{icon}}",
+        "payload": "PRESS",
+        "payloadType": "str",
+        "topic": "reloj/button/stopwatch_start_pause/command",
+        "topicType": "str",
+        "x": 630,
+        "y": 420,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "e55a62d5fb55fae2",
+        "type": "ui_button",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "group": "c9fa62549f2fb149",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reset",
+        "tooltip": "Vuelve a cero el cronómetro y lo pausa",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "replay",
+        "payload": "PRESS",
+        "payloadType": "str",
+        "topic": "reloj/button/stopwatch_reset/command",
+        "topicType": "str",
+        "x": 630,
+        "y": 460,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "c7825c4255d93c75",
+        "type": "ui_button",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "group": "c9fa62549f2fb149",
+        "order": 7,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "4",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "4",
+        "payloadType": "num",
+        "topic": "reloj/number/countdown_minutes/command",
+        "topicType": "str",
+        "x": 1430,
+        "y": 780,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "f9f4d57fa7e03b4b",
+        "type": "ui_button",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "group": "c9fa62549f2fb149",
+        "order": 8,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "5",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "5",
+        "payloadType": "num",
+        "topic": "reloj/number/countdown_minutes/command",
+        "topicType": "str",
+        "x": 1430,
+        "y": 820,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "bf139c5553902a66",
+        "type": "ui_button",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "group": "c9fa62549f2fb149",
+        "order": 9,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "7",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "7",
+        "payloadType": "num",
+        "topic": "reloj/number/countdown_minutes/command",
+        "topicType": "str",
+        "x": 1430,
+        "y": 860,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "9d976ef07b141d00",
+        "type": "ui_button",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "group": "c9fa62549f2fb149",
+        "order": 10,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "8",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "8",
+        "payloadType": "num",
+        "topic": "reloj/number/countdown_minutes/command",
+        "topicType": "str",
+        "x": 1430,
+        "y": 900,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "cabf77d3c5ee7f18",
+        "type": "ui_button",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "group": "c9fa62549f2fb149",
+        "order": 11,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "10",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "10",
+        "payloadType": "num",
+        "topic": "reloj/number/countdown_minutes/command",
+        "topicType": "str",
+        "x": 1430,
+        "y": 940,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "7f0d117cf48872f5",
+        "type": "ui_button",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "group": "c9fa62549f2fb149",
+        "order": 12,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "15",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "15",
+        "payloadType": "num",
+        "topic": "reloj/number/countdown_minutes/command",
+        "topicType": "str",
+        "x": 1430,
+        "y": 980,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "3a94e7a045653772",
+        "type": "ui_button",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "group": "c9fa62549f2fb149",
+        "order": 13,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "30",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "30",
+        "payloadType": "num",
+        "topic": "reloj/number/countdown_minutes/command",
+        "topicType": "str",
+        "x": 1430,
+        "y": 1020,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "a04b7040e40698ad",
+        "type": "ui_button",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "group": "c9fa62549f2fb149",
+        "order": 15,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "60",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "60",
+        "payloadType": "num",
+        "topic": "reloj/number/countdown_minutes/command",
+        "topicType": "str",
+        "x": 1430,
+        "y": 1060,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "1944bc65deb26b4f",
+        "type": "ui_button",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "group": "31f62344d72bab20",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "",
+        "tooltip": "Reloj",
+        "color": "",
+        "bgcolor": "{{background}}",
+        "className": "",
+        "icon": "access_time",
+        "payload": "clock",
+        "payloadType": "str",
+        "topic": "reloj/select/sel_display_mode/command",
+        "topicType": "str",
+        "x": 730,
+        "y": 1160,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "2805212ca9287d1a",
+        "type": "ui_button",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "group": "31f62344d72bab20",
+        "order": 3,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "",
+        "tooltip": "Cronómetro",
+        "color": "",
+        "bgcolor": "{{background}}",
+        "className": "",
+        "icon": "timer",
+        "payload": "stopwatch",
+        "payloadType": "str",
+        "topic": "reloj/select/sel_display_mode/command",
+        "topicType": "str",
+        "x": 730,
+        "y": 1200,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "7012445d95f222ef",
+        "type": "ui_button",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "group": "31f62344d72bab20",
+        "order": 4,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "",
+        "tooltip": "TIEMPO",
+        "color": "",
+        "bgcolor": "{{background}}",
+        "className": "",
+        "icon": "wb_irradescent",
+        "payload": "sign",
+        "payloadType": "str",
+        "topic": "reloj/select/sel_display_mode/command",
+        "topicType": "str",
+        "x": 730,
+        "y": 1240,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "d961356a95606a41",
+        "type": "ui_button",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "group": "c9fa62549f2fb149",
+        "order": 16,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "+5",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "5",
+        "payloadType": "num",
+        "topic": "reloj/number/countdown_minutes/command",
+        "topicType": "str",
+        "x": 1430,
+        "y": 1100,
+        "wires": [
+            [
+                "7dd571f269253a1b"
+            ]
+        ]
+    },
+    {
+        "id": "d452d0e91f71a766",
+        "type": "ui_button",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "group": "c9fa62549f2fb149",
+        "order": 17,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "+10",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "10",
+        "payloadType": "num",
+        "topic": "reloj/number/countdown_minutes/command",
+        "topicType": "str",
+        "x": 1430,
+        "y": 1140,
+        "wires": [
+            [
+                "7dd571f269253a1b"
+            ]
+        ]
+    },
+    {
+        "id": "d32eaadf1eb3a484",
+        "type": "ui_button",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "group": "c9fa62549f2fb149",
+        "order": 14,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "45",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "45",
+        "payloadType": "num",
+        "topic": "reloj/number/countdown_minutes/command",
+        "topicType": "str",
+        "x": 1430,
+        "y": 1180,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "02c9cad76dce4cec",
+        "type": "ui_button",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "group": "c9fa62549f2fb149",
+        "order": 6,
+        "width": "1",
+        "height": "1",
+        "passthru": false,
+        "label": "0",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "reloj/number/countdown_minutes/command",
+        "topicType": "str",
+        "x": 1430,
+        "y": 740,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "86400acd1d962e04",
+        "type": "ui_dropdown",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "label": "Tiempo excedido",
+        "tooltip": "Qué hacer una vez que se cumple el tiempo de la parte",
+        "place": "Select option",
+        "group": "65dc11e5555b0aad",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Continuar",
+                "value": "normal",
+                "type": "str"
+            },
+            {
+                "label": "Cartel TIEMPO",
+                "value": "sign",
+                "type": "str"
+            },
+            {
+                "label": "Parpadear",
+                "value": "blink",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "reloj/select/sel_overtime_mode/command",
+        "topicType": "str",
+        "className": "",
+        "x": 670,
+        "y": 680,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "51fd80a8501f1580",
+        "type": "ui_switch",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "label": "Parpadear",
+        "tooltip": "Parpadea la pantalla",
+        "group": "31f62344d72bab20",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "reloj/switch/sw_blink/command",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 650,
+        "y": 560,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "b702428906dc0d2e",
+        "type": "ui_switch",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "label": "Mostrar cronómetro automáticamente",
+        "tooltip": "Muestra automáticamente el cronómetro cuando se lo inicia y vuelve al reloj cuando se lo pausa o resetea",
+        "group": "65dc11e5555b0aad",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "reloj/switch/stopwatch_auto_show/command",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 730,
+        "y": 980,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "36e4b52935240ce9",
+        "type": "ui_switch",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "label": "Cuenta regresiva",
+        "tooltip": "Muestra el tiempo en cuenta regresiva (sólo con duración de la parte mayor a cero)",
+        "group": "65dc11e5555b0aad",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "reloj/select/sel_stopwatch_mode/command",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "countdown",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "normal",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 670,
+        "y": 920,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "2619ca21b84fb226",
+        "type": "ui_switch",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "label": "Parpadear antes de tiempo excedido",
+        "tooltip": "Parpadea antes de que se termine el tiempo (15% de la duración de la parte)",
+        "group": "65dc11e5555b0aad",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "reloj/switch/stopwatch_blink_before_overtime/command",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 730,
+        "y": 1100,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "5dd449eac59b30a8",
+        "type": "ui_slider",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "label": "Brillo",
+        "tooltip": "Controla la intensidad de las luces de la pantalla",
+        "group": "65dc11e5555b0aad",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "reloj/number/lcd_brightness/command",
+        "topicType": "str",
+        "min": "1",
+        "max": "14",
+        "step": "1",
+        "className": "",
+        "x": 630,
+        "y": 1040,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "fb3f5ec25889b369",
+        "type": "ui_numeric",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "label": "Duración de la parte",
+        "tooltip": "Tiempo en minutos que dura la parte a cronometrar",
+        "group": "c9fa62549f2fb149",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": false,
+        "topic": "reloj/number/countdown_minutes/command",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "120",
+        "step": 1,
+        "className": "",
+        "x": 680,
+        "y": 740,
+        "wires": [
+            [
+                "ce323b130ba5fd0e"
+            ]
+        ]
+    },
+    {
+        "id": "5c25bbd2a2b5f038",
+        "type": "ui_text",
+        "z": "6454eccffb9ff684",
+        "group": "c9fa62549f2fb149",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Lucida Sans Typewriter,Lucida Console,Monaco,monospace",
+        "fontSize": "40",
+        "color": "#ffffff",
+        "x": 630,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "3bb77af3bd9c5c76",
+        "type": "ui_text",
+        "z": "6454eccffb9ff684",
+        "group": "a3bcd38d21b0f5cd",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Lucida Sans Typewriter,Lucida Console,Monaco,monospace",
+        "fontSize": "40",
+        "color": "#ffffff",
+        "x": 630,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "a1d2abd176afa4d6",
+        "type": "ui_text",
+        "z": "6454eccffb9ff684",
+        "group": "c9fa62549f2fb149",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "{{state}}",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 630,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "f712c1b489b74279",
+        "type": "ui_text",
+        "z": "6454eccffb9ff684",
+        "group": "31f62344d72bab20",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Lucida Sans Typewriter,Lucida Console,Monaco,monospace",
+        "fontSize": "40",
+        "color": "#ff1a1a",
+        "x": 630,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "989002343c70d140",
+        "type": "ui_ui_control",
+        "z": "6454eccffb9ff684",
+        "name": "",
+        "events": "all",
+        "x": 900,
+        "y": 240,
+        "wires": [
+            [
+                "6cc7e1fed12594ec"
+            ]
+        ]
+    },
+    {
+        "id": "fd47bbeb22561bd1",
+        "type": "ui_template",
+        "z": "6454eccffb9ff684",
+        "group": "65dc11e5555b0aad",
+        "name": "",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    .noblink {\n        text-decoration: none;\n        color: #FF0000;\n        font-size: 40px;\n        font-weight: bold;\n    };\n     #bg.noblink {\n        width: 100%; background-color: #000000;padding-top: 5px;padding-bottom: 5px;text-align: center;\n        color: #FF0000;\n        font-size: 44px;\n        };\n    .blink {\n\n        text-decoration: blink;\n        color: #FF0000;\n        font-size: 40px;\n        font-weight: bold;\n    \n    #bg.blink {\n    width: 100%; background-color: #000000;padding-top: 5px;padding-bottom: 5px;text-align: center;\n    font-size: 44px;}\n    };\n</style>\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 940,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f19da8eea093cb1d",
+        "type": "ui_template",
+        "z": "6454eccffb9ff684",
+        "d": true,
+        "group": "65dc11e5555b0aad",
+        "name": "",
+        "order": 0,
+        "width": "6",
+        "height": "2",
+        "format": "<div id=\"bg\"><span id=\"disp\" ng-bind-html=\"msg.payload\"></span><div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1120,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bd7cc3e2f03b35ab",
+        "type": "ui_template",
+        "z": "6454eccffb9ff684",
+        "group": "ec8a30f5e70f7290",
+        "name": "",
+        "order": 8,
+        "width": "6",
+        "height": "6",
+        "format": "<body>\n   \n    <img title=\"Escaneá el QR para control desde otro dispositivo\" src=\"{{msg.payload}}\">\n</body>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1280,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    }
+]

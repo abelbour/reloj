@@ -1,0 +1,49 @@
+version: "3.7"
+
+services:
+  node-red:
+    image: nodered/node-red:latest
+    environment:
+      - TZ=America/Argentina
+    ports:
+      - "1880:1880"
+    restart: unless-stopped
+    networks:
+      - node-red-net
+    volumes:
+      - ./data/node-red:/data
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    ports:
+      - 1883:1883
+      - 8883:8883
+      - 9001:9001
+    volumes:
+      - ./data/mosquitto/config:/mosquitto/config
+      - ./data/mosquitto/data:/mosquitto/data
+    restart: unless-stopped
+    networks:
+      # - node-red-net
+      - mosquitto
+  # esphome:
+  #   #container_name: esphome
+  #   image: ghcr.io/esphome/esphome
+  #   command: config/ dashboard
+  #   volumes:
+  #     - ./data/esphome:/config
+  #     - /etc/localtime:/etc/localtime:ro
+  #   restart: no
+  #   # privileged: true
+  #   # networks:
+  #   #  - esphome
+  #   network_mode: host
+  #   ports:
+  #     - 0.0.0.0:6052:6052
+  #     - 0.0.0.0:6123:6123
+
+networks:
+  node-red-net:
+  esphome:
+  mosquitto:
+    name: mosquitto
+    driver: bridge
